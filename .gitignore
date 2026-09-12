@@ -1,10 +1,17 @@
-<<<<<<< HEAD
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
 # ESP-IDF
 build/
+sdkconfig
 sdkconfig.old
-sdkconfig.defaults
 managed_components/
 dependencies.lock
+
+# Environment variables
+.env
 
 # Editor-specific
 .cache/
@@ -15,22 +22,9 @@ dependencies.lock
 .DS_Store
 Thumbs.db
 
-# Project-specific
+# Build artifacts (the prebuilt images under firmware/ are tracked on purpose)
 *.bin
 *.elf
 *.map
 *.idx
-=======
-# Environmental Variables
-.env
-
-# VS Code
-.vscode/
-
-# ESP-IDF
-build/
-sdkconfig
-sdkconfig.old
-managed_components/
-dependencies.lock
->>>>>>> 872779c (init project)
+!firmware/*.bin
